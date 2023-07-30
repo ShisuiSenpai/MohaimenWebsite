@@ -1,0 +1,93 @@
+body{
+    background: #35393e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+.profpic{
+    width: 150px;
+    border: none;
+    border-radius: 50%;
+    padding: 6px;
+}
+
+.wrapper{
+    width: 500px;
+    height: 650px;
+    background: #212226;
+    padding: 20px 20px;
+    border-radius: 30px 40px;
+    border: 2px solid rgba(255, 255, 255, .2);
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
+
+.wrapper h1{
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.wrapper h2{
+    padding: 0 5%;
+}
+.wrapper h3{
+    padding: 0 20px;
+}
+
+.wrapper h4{
+    padding: 0 10px;
+    font-weight: 900;
+}
+
+.wrapper h5{
+    padding: 0 10px;
+}
+
+.wrapper .membersince{
+    padding: 0 10px;
+}
+
+.wrapper .date{
+    padding: 0 10px;
+}
+
+.wrapper .note{
+    padding: 0 10px;
+}
+
+.wrapper .notetext{
+    position: relative;
+    width: 35%;
+    margin: 10px 5px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 1px solid white;
+    border-radius: 20px;
+    font-size: 16px;
+    color: white;
+    padding: 0 20px;
+}
+
+@keyframes slideRight{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
